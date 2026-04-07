@@ -1,6 +1,4 @@
 
-with open("training_script.py", "w") as f:
-    f.write('''
 import pandas as pd
 import numpy as np
 import joblib
@@ -102,4 +100,3 @@ joblib.dump(ytest_pred, 'ypred.pkl')
 print('\\nFinal Model Trained and Saved ✓')
 print(f'Train metrics: {train_metrics}')
 print(f'Test metrics: {test_metrics}')
-''')
